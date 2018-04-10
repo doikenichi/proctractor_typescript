@@ -1,5 +1,5 @@
 // local import of the exported AngularPage class
-import {AngularHomepage} from './angularPage';
+import {AngularHomepage} from './page_object/angularPage';
 import {browser, element, by, By, $, $$, ExpectedConditions} from 'protractor';
 
 // The jasmine typings are brought in via DefinitelyTyped ambient typings.

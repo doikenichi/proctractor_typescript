@@ -13,7 +13,12 @@ import {Config} from 'protractor';
 export let config: Config = {
   framework: 'jasmine',
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    "chromeOptions": {
+      'binary': '/usr/bin/google-chrome',
+      args: ["--no-sandbox"],
+      extensions: []
+    }
   },
   specs: [ 'specPageObjects.js' ],
   seleniumAddress: 'http://localhost:4444/wd/hub'
